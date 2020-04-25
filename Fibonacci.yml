@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Apr 25 11:34:40 2020
+
+@author: Augustina
+"""
+
+# Using Python to write a code that outputa Fibonacci sequence of a given number of term.
+nterms = int (input("Enter the number of terms you want:"))
+n1,n2 = 0, 1
+count = 0
+# Inputing conditions
+if nterms <= 0:
+    print("Input a valid number of terms")
+elif nterms ==1:
+    print("Your fibonacci sequence output for", nterms, " is :")
+    print(n1)
+# Continuing     
+else:
+    print("Your fibonacci sequence output for",nterms,"terms are:")
+    print(f"{n1} = {n1}")
+    print(f"{n2} = {n2}")
+    while count < nterms-2:
+        nth = n1 + n2
+        # Displaying the computation
+        print(f"{n1} + {n2} = {nth}")
+        n1 = n2   
+        n2 = nth 
+        count +=1
+        if count == nterms-2:
+            print("the end")
