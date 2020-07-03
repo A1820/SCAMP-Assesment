@@ -28,4 +28,4 @@ else:
         n2 = nth 
         count +=1
         if count == nterms-2:
-            print("the end")
+            print("The end, bye")
